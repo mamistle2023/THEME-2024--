@@ -1,0 +1,25 @@
+.tableau-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.tableau-grid-item, .tableau-grid-column {
+    border: 1px dashed #ccc;
+    min-height: 150px;
+    margin: 10px;
+    position: relative;
+}
+
+.tableau-grid-column {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid red; /* Hinzufügen des roten Randes */
+}
+
+.tableau-grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

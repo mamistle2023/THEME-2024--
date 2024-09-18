@@ -1,0 +1,62 @@
+/*
+Theme Name: 111 ML Theme 2025 V0.1
+Theme URI: http://deinewebsite.de/
+Author: Dein Name
+Author URI: http://deinewebsite.de/
+Description: Ein maßgeschneidertes Theme für einen professionellen Fotografen.
+Version: 3.6
+*/
+
+/* Limit the width of images in the portfolio image metabox */
+
+  /* style.css */
+
+/* CSS für ausgegraute Bilder */
+/* CSS-Styling für die Tableau Grid Metabox */
+
+#portfolio_images_container .portfolio_image img {
+  max-width: 300px !important;
+  height: auto !important;
+}
+
+
+
+.tableau-grid-container {
+  display: flex;
+   
+  flex-wrap: wrap;
+}
+
+.tableau-grid-column {
+  flex: 1;
+  min-height: 200px;
+  border: 1px solid #000;
+  margin: 5px;
+}
+
+
+#T_image_list img {
+  max-width: 100%; /* Stellen Sie sicher, dass das Bild nicht breiter ist als der Container */
+  position: relative; /* Dies könnte notwendig sein, wenn Sie das Bild innerhalb des Containers positionieren wollen */
+}
+
+
+.tableau-grid-container .image {
+  flex: 50%;
+}
+
+.TG-image.ui-sortable-helper {
+  opacity: 0.5;
+  border: 1px dashed #333;
+}
+
+.TG-images-list {
+  display: flex !important;
+  flex-wrap: wrap !important; /* Erlaubt das Umbruch des Inhalts auf die nächste Zeile, wenn nicht genug Platz vorhanden ist */
+  gap: 10px !important;  /* Abstand zwischen den Bildern */
+}
+
+.TG-image {
+  flex: 1 !important;  /* Erlaubt den Bildern, flexibel zu sein, aber alle nehmen den gleichen Raum ein */
+  max-width: 300px !important; /* Maximale Breite, die ein Bild einnehmen kann */
+}
